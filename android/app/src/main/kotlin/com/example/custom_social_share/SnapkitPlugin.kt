@@ -44,11 +44,7 @@ class SnapkitPlugin : FlutterPlugin, MethodCallHandler, ActivityAware, OnLoginSt
     override fun onMethodCall(call: MethodCall, result: MethodChannel.Result) {
         when (call.method) {
             "callLogin" -> {
-                activity?.let {
-                    SnapLogin.getLoginStateController(it).addOnLoginStateChangedListener(this)
-                    SnapLogin.getAuthTokenManager(it).startTokenGrant()
-                    resultCallback = result
-                }
+
             }
             "getUser" -> {
                 val query = "{me{externalId, displayName, bitmoji{selfie}}}"
