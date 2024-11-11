@@ -5,7 +5,6 @@ import androidx.annotation.NonNull
 import androidx.annotation.Nullable
 import com.snapchat.kit.sdk.SnapCreative
 import com.snapchat.kit.sdk.SnapLogin
-import com.snapchat.kit.sdk.core.controller.LoginStateController.OnLoginStateChangedListener
 import com.snapchat.kit.sdk.creative.api.SnapCreativeKitApi
 import com.snapchat.kit.sdk.creative.exceptions.SnapMediaSizeException
 import com.snapchat.kit.sdk.creative.exceptions.SnapStickerSizeException
